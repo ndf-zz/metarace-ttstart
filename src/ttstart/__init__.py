@@ -14,7 +14,7 @@
  backlightlow  | (float) dimmed backlight level between starters [0.25]
  backlighthigh | (float) backlight level during countdown [1.0]
  startlist     | (string) filename for a csv startlist file [startlist.csv]
- syncthresh    | (float) maximum alowed audio de-sync in seconds [0.12] (2)
+ syncthresh    | (float) maximum allowed audio de-sync in seconds [0.12] (2)
  
  
  Notes:
