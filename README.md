@@ -18,8 +18,7 @@ key           | (type) description [default]
 ---           | ---
 topic         | (string) telegraph topic for start list updates [startlist]
 fullscreen    | (boolean) run application fullscreen after initialisation
-backlightdev  | (string) sysfs path to backlight device [null] (1)
-              |          eg: /sys/class/backlight/acpi_video0
+backlightdev  | (string) sysfs path to backlight device [null] (1) eg: /sys/class/backlight/acpi_video0
 backlightlow  | (float) dimmed backlight level between starters [0.25]
 backlighthigh | (float) backlight level during countdown [1.0]
 startlist     | (string) filename for a csv startlist file [startlist.csv]
