@@ -623,6 +623,11 @@ class ttstart(Gtk.Window):
 
 def main():
     """Run the TT start application"""
+    chk = Gtk.init_check()
+    if not chk[0]:
+        print('Unable to init Gtk display')
+        sys.exit(-1)
+
     ch = logging.StreamHandler()
     ch.setLevel(_LOGLEVEL)
     fh = logging.Formatter(metarace.LOGFORMAT)
