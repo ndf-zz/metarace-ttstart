@@ -49,24 +49,35 @@ For example:
 
 ## Requirements
 
+   - Python >= 3.9
+   - Gtk >= 3.0
+   - metarace >= 2.1.1
    - tex-gyre fonts
    - gstreamer alsa plugins
-   - metarace >= 2.0
 
 Note: Some 32 bit systems (notably Intel Atom Toughbooks) will not
 play audio with the default Debian desktop installation.
 The workaround is to remove pulseaudio and use alsa directly:
 
-	# apt remove 'pulseaudio*'
+	$ sudo apt remove 'pulseaudio*'
 
 ## Installation
 
-[Install metarace](https://github.com/ndf-zz/metarace#installation)
-and the required system packages:
+### Debian 11+
 
-	# apt install tex-gyre gir1.2-gtk-3.0 gir1.2-gstreamer-1.0 gstreamer1.0-alsa
+Install system requirements for ttstart and metarace with apt:
 
-Then install ttstart using pip:
+	$ sudo apt install python3-venv python3-pip python3-cairo python3-gi python3-gi-cairo
+	$ sudo apt install gir1.2-gtk-3.0 gir1.2-rsvg-2.0 gir1.2-pango-1.0 gir1.2-gstreamer-1.0 gstreamer1.0-alsa tex-gyre
+	$ sudo apt install python3-serial python3-paho-mqtt python3-dateutil python3-xlwt
 
-	$ pip3 install metarace-ttstart
+If not already created, add a virtualenv for metarace packages:
+
+	$ mkdir -p ~/Documents/metarace
+	$ python3 -m venv --system-site-packages ~/Documents/metarace/venv
+
+Activate the virtualenv and install ttstart with pip:
+
+	$ source ~/Documents/metarace/venv/bin/activate
+	(venv) $ pip3 install metarace-ttstart
 

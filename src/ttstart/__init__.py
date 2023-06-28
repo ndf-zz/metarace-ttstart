@@ -40,7 +40,7 @@ import csv
 import os
 import cairo
 import json
-from importlib_resources import files
+from importlib.resources import files
 from metarace import telegraph
 from metarace import tod
 from metarace import jsonconfig
@@ -63,6 +63,7 @@ from gi.repository import PangoCairo
 gi.require_version('Gst', '1.0')
 from gi.repository import Gst
 
+VERSION = '1.0.1'
 _DEFTOPIC = 'startlist'
 _DEFAUDIOSYNCTHRESH = 0.12
 _RESOURCE_PKG = 'ttstart'
