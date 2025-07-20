@@ -1,14 +1,15 @@
 [build-system]
-requires = ["setuptools>=62"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "metarace-ttstart"
-version = "1.0.1"
+version = "1.0.2"
 description = "Time Trial Start Console"
 readme = "README.md"
-requires-python = ">=3.9"
-license = {text = "MIT"}
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = ["TT", "start"]
 authors = [
     {email = "ndf-zz@6-v.org", name = "Nathan Fraser"}
@@ -20,7 +21,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "metarace>=2.1.1",
+    "metarace>=2.1.14,<2.2",
 ]
 [project.urls]
 homepage = "https://github.com/ndf-zz/metarace-ttstart"

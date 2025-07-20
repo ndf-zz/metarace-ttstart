@@ -49,9 +49,9 @@ For example:
 
 ## Requirements
 
-   - Python >= 3.9
+   - Python >= 3.11
    - Gtk >= 3.0
-   - metarace >= 2.1.1
+   - metarace >= 2.1.14
    - tex-gyre fonts
    - gstreamer alsa plugins
 
@@ -63,21 +63,18 @@ The workaround is to remove pulseaudio and use alsa directly:
 
 ## Installation
 
-### Debian 11+
+Use shared installer from metarace to collect requirements
+and install with roadmeet and trackmeet:
 
-Install system requirements for ttstart and metarace with apt:
+	$ wget https://github.com/ndf-zz/metarace/raw/refs/heads/main/metarace-install.sh
+	$ sh metarace-install.sh
 
-	$ sudo apt install python3-venv python3-pip python3-cairo python3-gi python3-gi-cairo
-	$ sudo apt install gir1.2-gtk-3.0 gir1.2-rsvg-2.0 gir1.2-pango-1.0 gir1.2-gstreamer-1.0 gstreamer1.0-alsa tex-gyre
-	$ sudo apt install python3-serial python3-paho-mqtt python3-dateutil python3-xlwt
+Alternatively, install system requirements and use pip:
 
-If not already created, add a virtualenv for metarace packages:
-
+	$ sudo apt-get install python3-venv python3-pip python3-cairo \
+	python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-rsvg-2.0 \
+	gir1.2-pango-1.0 gir1.2-gstreamer-1.0 gstreamer1.0-alsa tex-gyre
 	$ mkdir -p ~/Documents/metarace
 	$ python3 -m venv --system-site-packages ~/Documents/metarace/venv
-
-Activate the virtualenv and install ttstart with pip:
-
-	$ source ~/Documents/metarace/venv/bin/activate
-	(venv) $ pip3 install metarace-ttstart
-
+	$ ~/Documents/metarace/venv/bin/pip install metarace-ttstart
+	$ ~/Documents/metarace/venv/bin/ttstart

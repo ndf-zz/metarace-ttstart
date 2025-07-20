@@ -31,7 +31,7 @@
        # apt remove 'pulseaudio*'
 
 """
-__version__ = '1.0.2a1'
+__version__ = '1.0.2'
 
 import sys
 import gi
