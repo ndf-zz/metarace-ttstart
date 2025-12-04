@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "metarace-ttstart"
-version = "1.0.2"
+version = "1.0.3"
 description = "Time Trial Start Console"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -21,7 +21,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "metarace>=2.1.14,<2.2",
+    "metarace>=2.1.20,<2.2",
 ]
 [project.urls]
 homepage = "https://github.com/ndf-zz/metarace-ttstart"

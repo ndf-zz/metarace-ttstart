@@ -12,6 +12,12 @@
 
 ### Security
 
+## [1.0.3] - 2025-12-05
+
+### Changed
+
+   - update application ID
+
 ## [1.0.2] - 2025-07-20
 
 ### Added
@@ -22,7 +28,7 @@
 
    - set program and application names to match .desktop file
    - set default logo by xdg name instead of file
-   - use __version__ instead of VERSION
+   - use `__version__` instead of VERSION
    - truncate text instead of squeeze fitting
    - alter default audio sync threshold to 0.15s
 

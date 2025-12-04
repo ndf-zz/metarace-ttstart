@@ -31,7 +31,7 @@
        # apt remove 'pulseaudio*'
 
 """
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 import sys
 import gi
@@ -64,7 +64,7 @@ from gi.repository import PangoCairo
 gi.require_version('Gst', '1.0')
 from gi.repository import Gst
 
-PRGNAME = 'org.6_v.ttstart'
+PRGNAME = 'org._6_v.ttstart'
 APPNAME = 'TTStart'
 
 _DEFTOPIC = 'startlist'
